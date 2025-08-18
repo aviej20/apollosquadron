@@ -93,7 +93,7 @@ p, a {
 }
 
 .resources-wrapper {
-  height: 85vh;
+  margin-bottom: 15rem;
   padding: 0 3rem;
   display: flex;
   gap: 3rem;
@@ -257,6 +257,7 @@ p, a {
     padding-top: 2rem;
   }
   .resources-wrapper {
+    margin-bottom: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
