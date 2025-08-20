@@ -28,7 +28,8 @@ p, a{
         .nav__links{
             list-style-type: none;
             display: flex;
-            gap: 1rem;
+            align-items: center;
+            gap: 3rem;
             a{
                 font-size: 1.25rem;
                 font-family: "Audiowide";
@@ -38,6 +39,15 @@ p, a{
             a:hover{
                 color: #F2F0EF;
                 text-decoration: underline;
+            }
+            .logo-svg{
+                width: 9.5rem;
+                svg{
+                    fill: #F2F0EF;
+                    &:hover{
+                        fill: #FFBA49;
+                    }
+                }
             }
         }
     }
@@ -54,7 +64,7 @@ p, a{
     .intro{
         display: flex;
         flex-direction: column;
-        gap: .5rem;
+        gap: 1rem;
         padding-left: 3rem;
         h1{
             font-family: 'Zen Dots';
