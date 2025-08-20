@@ -134,7 +134,7 @@ p, a {
 }
 .resources-wrapper .resources--links .links__links h3 {
   font-family: "Audiowide";
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: underline;
   margin-bottom: 1rem;
   text-align: center;
@@ -144,6 +144,7 @@ p, a {
   font-weight: bold;
 }
 .resources-wrapper .resources--links .links__links li a {
+  font-size: 1.25rem;
   text-decoration: none;
 }
 .resources-wrapper .resources--links .links__links li a:hover {
@@ -201,7 +202,6 @@ p, a {
 }
 .cta-wrapper .cta--intro .socials__list {
   margin-top: 1rem;
-  justify-content: center;
   display: flex;
   gap: 1rem;
   list-style: none;
