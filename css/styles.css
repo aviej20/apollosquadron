@@ -51,12 +51,27 @@ p, a {
   fill: #FFBA49;
 }
 
+.banner {
+  background-color: #FFBA49;
+  padding: 1rem;
+  width: fit-content;
+  margin: 0 auto;
+  height: 2vh;
+}
+.banner p, .banner a {
+  color: #181818;
+  font-weight: bold;
+}
+.banner a {
+  text-transform: uppercase;
+}
+
 .main-wrapper {
   color: #F2F0EF;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  grid-template-rows: 90vh;
+  grid-template-rows: 88vh;
   align-items: center;
   overflow: hidden;
 }
@@ -102,16 +117,55 @@ p, a {
   fill: #FFBA49;
 }
 
+.announcements-wrapper {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: #FFBA49;
+}
+.announcements-wrapper h2 {
+  text-decoration: underline;
+  font-size: 2.75rem;
+  font-family: "Audiowide";
+  text-align: center;
+  color: #181818;
+}
+.announcements-wrapper h3 {
+  font-size: 1.75rem;
+}
+.announcements-wrapper h3, .announcements-wrapper p, .announcements-wrapper a {
+  text-align: center;
+  color: #181818;
+}
+.announcements-wrapper a {
+  font-size: 1.25rem;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.announcements-wrapper a:hover {
+  text-decoration: none;
+}
+.announcements-wrapper .announcements__img {
+  display: block;
+  min-width: 450px;
+  width: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
 .resources-wrapper {
-  margin-bottom: 15rem;
-  padding: 0 3rem;
+  margin-top: 5rem;
+  padding: 5rem;
   display: flex;
   gap: 3rem;
   flex-direction: column;
   align-items: center;
 }
 .resources-wrapper .resources--intro h2 {
-  font-size: 2rem;
+  font-size: 2.75rem;
   font-family: "Audiowide";
   margin-bottom: 1rem;
   text-align: center;
@@ -121,7 +175,7 @@ p, a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
+  gap: 5rem;
 }
 .resources-wrapper .resources--links .links__svg {
   width: 25%;
@@ -135,7 +189,6 @@ p, a {
 .resources-wrapper .resources--links .links__links h3 {
   font-family: "Audiowide";
   font-size: 2rem;
-  text-decoration: underline;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -145,17 +198,18 @@ p, a {
 }
 .resources-wrapper .resources--links .links__links li a {
   font-size: 1.25rem;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .resources-wrapper .resources--links .links__links li a:hover {
   cursor: pointer;
   color: #FFBA49;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .schedule-wrapper {
   color: #F2F0EF;
-  padding: 0 3rem;
+  margin-top: 5rem;
+  padding: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -165,7 +219,7 @@ p, a {
   text-align: center;
 }
 .schedule-wrapper .schedule--intro h2 {
-  font-size: 2rem;
+  font-size: 2.75rem;
   font-family: "Audiowide";
   margin-bottom: 1rem;
 }
@@ -181,7 +235,7 @@ p, a {
 .cta-wrapper {
   height: 50vh;
   margin-top: 2rem;
-  padding: 0 3rem;
+  padding: 2rem 5rem;
   background-color: #181818;
   color: #F2F0EF;
   display: grid;
@@ -197,7 +251,7 @@ p, a {
   gap: 0.5rem;
 }
 .cta-wrapper .cta--intro h2 {
-  font-size: 2rem;
+  font-size: 2.75rem;
   font-family: "Audiowide";
 }
 .cta-wrapper .cta--intro .socials__list {
@@ -244,10 +298,15 @@ p, a {
   .header-wrapper .nav-wrapper .nav__links li:nth-child(2) {
     display: block;
   }
+  .banner {
+    height: 5vh;
+  }
   .main-wrapper {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    height: 80vh;
+    justify-content: center;
   }
   .main-wrapper .intro {
     order: 2;
@@ -266,9 +325,14 @@ p, a {
   .main-wrapper .xwing-svg {
     padding-top: 2rem;
   }
+  .announcements-wrapper h2 {
+    font-size: 2.25rem;
+  }
+  .announcements-wrapper .announcements__img {
+    min-width: 350px;
+  }
   .resources-wrapper {
     margin-bottom: 0;
-    height: 100vh;
     display: flex;
     justify-content: center;
   }
@@ -279,11 +343,16 @@ p, a {
     flex-direction: column;
     gap: 2rem;
   }
+  .resources-wrapper .resources--links .links__svg {
+    width: 100%;
+  }
   .schedule-wrapper {
     display: flex;
     justify-content: center;
+    margin-top: 0;
     height: 100vh;
     margin-bottom: 3rem;
+    padding: 5rem 3rem;
   }
   .schedule-wrapper .schedule--calendar {
     margin: 0;
@@ -295,11 +364,9 @@ p, a {
     gap: 0.5rem;
   }
   .cta-wrapper {
-    height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     gap: 2rem;
   }
   .cta-wrapper .cta--svg {
