@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initialView: 'dayGridMonth',
     
     // Google Calendar API key
-    googleCalendarApiKey: 'AIzaSyAaHxcZ2GXJUqNaheEjP_XetdncqgPR2Zs',
+    googleCalendarApiKey: import.meta.env.VITE_GOOGLE_KEY,
 
     // Event source from Google Calendar
     eventSources: [
