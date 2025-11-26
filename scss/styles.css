@@ -88,25 +88,25 @@ p, a {
 .main-wrapper .intro h2 {
   font-family: "Audiowide";
 }
-.main-wrapper .intro__btn-group {
-  margin-top: 2rem;
-}
-.main-wrapper .intro__btn-group .btn {
+.main-wrapper .intro .btn {
   border: 2px solid #FFBA49;
   border-radius: 0.5rem;
   background-color: black;
   padding: 1rem 2rem;
   margin: 1rem;
-  margin-left: 0;
   width: fit-content;
+}
+.main-wrapper .intro .btn a {
   font-family: "Audiowide";
   font-weight: bold;
   color: #F2F0EF;
   text-decoration: none;
 }
-.main-wrapper .intro__btn-group .btn:hover {
+.main-wrapper .intro .btn:hover {
   cursor: pointer;
   background-color: #FFBA49;
+}
+.main-wrapper .intro .btn:hover a {
   color: black;
   text-decoration: underline;
 }
@@ -117,7 +117,8 @@ p, a {
   fill: #FFBA49;
 }
 
-.announcements-wrapper, .new-players-wrapper {
+.announcements-wrapper,
+.new-players-wrapper {
   padding: 5rem;
   display: flex;
   flex-direction: column;
@@ -125,29 +126,37 @@ p, a {
   gap: 1rem;
   background-color: #FFBA49;
 }
-.announcements-wrapper h2, .new-players-wrapper h2 {
+.announcements-wrapper h2,
+.new-players-wrapper h2 {
   text-decoration: underline;
   font-size: 2.75rem;
   font-family: "Audiowide";
   text-align: center;
   color: #181818;
 }
-.announcements-wrapper h3, .new-players-wrapper h3 {
+.announcements-wrapper h3,
+.new-players-wrapper h3 {
   font-size: 1.75rem;
 }
-.announcements-wrapper h3, .announcements-wrapper p, .announcements-wrapper a, .new-players-wrapper h3, .new-players-wrapper p, .new-players-wrapper a {
+.announcements-wrapper h3, .announcements-wrapper p, .announcements-wrapper a,
+.new-players-wrapper h3,
+.new-players-wrapper p,
+.new-players-wrapper a {
   text-align: center;
   color: #181818;
 }
-.announcements-wrapper a, .new-players-wrapper a {
+.announcements-wrapper a,
+.new-players-wrapper a {
   font-size: 1.25rem;
   text-decoration: underline;
   font-weight: bold;
 }
-.announcements-wrapper a:hover, .new-players-wrapper a:hover {
+.announcements-wrapper a:hover,
+.new-players-wrapper a:hover {
   text-decoration: none;
 }
-.announcements-wrapper .announcements__img, .new-players-wrapper .announcements__img {
+.announcements-wrapper .announcements__img,
+.new-players-wrapper .announcements__img {
   display: block;
   min-width: 450px;
   width: 100%;

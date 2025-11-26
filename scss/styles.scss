@@ -88,29 +88,29 @@ p, a{
         h2{
             font-family: 'Audiowide';
         }
-
+    &__btn-group{
+        margin-top: 2rem;
         .btn{
             border: 2px solid #FFBA49;
             border-radius: .5rem;
             background-color: black;
             padding: 1rem 2rem;
             margin: 1rem;
+            margin-left: 0;
             width: fit-content;
-                a{
-                    font-family: 'Audiowide';
-                    font-weight: bold;
-                    color: #F2F0EF;
-                    text-decoration: none;
-                }
+            font-family: 'Audiowide';
+            font-weight: bold;
+            color: #F2F0EF;
+            text-decoration: none;
+
         }
         .btn:hover{
             cursor: pointer;
             background-color: #FFBA49;
-                a{
-                    color: black;
-                    text-decoration: underline;
-                }
+            color: black;
+            text-decoration: underline;
         }
+    }
     }
     .xwing-svg{
         width: 125%;
@@ -120,7 +120,7 @@ p, a{
     }
 }
 
-.announcements-wrapper{
+.announcements-wrapper, .new-players-wrapper{
     padding: 5rem;
     display: flex;
     flex-direction: column;
