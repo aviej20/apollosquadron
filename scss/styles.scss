@@ -342,7 +342,7 @@ p, a{
         gap: 1rem;
         height: 80vh;
         justify-content: center;
-        padding-bottom: 1rem;
+        padding-bottom: 5rem;
         .intro{
             order: 2;
             padding: 2rem;
@@ -378,7 +378,7 @@ p, a{
     }
 
     .new-players-wrapper{
-        padding: 3rem;
+        padding: 5rem 3rem;
         .videos-wrapper{
             flex-direction: column;
             .video__iframe{
@@ -409,7 +409,6 @@ p, a{
         justify-content: center;
         margin-top: 0;
         height: 100vh;
-        margin-bottom: 3rem;
         padding: 5rem 3rem;
 
         .schedule--calendar{
@@ -428,6 +427,9 @@ p, a{
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        .cta--intro{
+            margin-bottom: 2rem;
+        }
         .cta--svg{
             order: 2;
             top: -2rem;
