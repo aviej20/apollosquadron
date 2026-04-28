@@ -120,7 +120,7 @@ p, a {
   fill: #FFBA49;
 }
 
-.announcements-wrapper, .new-players-wrapper {
+.announcements-wrapper {
   padding: 5rem;
   display: flex;
   flex-direction: column;
@@ -128,29 +128,29 @@ p, a {
   gap: 1rem;
   background-color: #FFBA49;
 }
-.announcements-wrapper h2, .new-players-wrapper h2 {
+.announcements-wrapper h2 {
   text-decoration: underline;
   font-size: 2.75rem;
   font-family: "Audiowide";
   text-align: center;
   color: #181818;
 }
-.announcements-wrapper h3, .new-players-wrapper h3 {
+.announcements-wrapper h3 {
   font-size: 1.75rem;
 }
-.announcements-wrapper h3, .announcements-wrapper p, .announcements-wrapper a, .new-players-wrapper h3, .new-players-wrapper p, .new-players-wrapper a {
+.announcements-wrapper h3, .announcements-wrapper p, .announcements-wrapper a {
   text-align: center;
   color: #181818;
 }
-.announcements-wrapper a, .new-players-wrapper a {
+.announcements-wrapper a {
   font-size: 1.25rem;
   text-decoration: underline;
   font-weight: bold;
 }
-.announcements-wrapper a:hover, .new-players-wrapper a:hover {
+.announcements-wrapper a:hover {
   text-decoration: none;
 }
-.announcements-wrapper .announcements__img, .new-players-wrapper .announcements__img {
+.announcements-wrapper .announcements__img {
   display: block;
   min-width: 450px;
   width: 100%;
@@ -158,18 +158,8 @@ p, a {
   margin: 0 auto;
   margin-bottom: 1rem;
 }
-.announcements-wrapper .videos-wrapper, .new-players-wrapper .videos-wrapper {
-  display: flex;
-  gap: 1rem;
-  width: 100%;
-}
-.announcements-wrapper .videos-wrapper .video__iframe, .new-players-wrapper .videos-wrapper .video__iframe {
-  width: 100%;
-  min-height: 450px;
-  height: 100%;
-}
 
-.resources-wrapper {
+.resources-wrapper, .new-players-wrapper {
   margin-top: 5rem;
   padding: 5rem;
   display: flex;
@@ -177,46 +167,64 @@ p, a {
   flex-direction: column;
   align-items: center;
 }
-.resources-wrapper .resources--intro h2 {
+.resources-wrapper h3, .new-players-wrapper h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.resources-wrapper p, .new-players-wrapper p {
+  text-align: center;
+}
+.resources-wrapper .resources--intro h2, .resources-wrapper .new-players--intro h2, .new-players-wrapper .resources--intro h2, .new-players-wrapper .new-players--intro h2 {
   font-size: 2.75rem;
   font-family: "Audiowide";
   margin-bottom: 1rem;
   text-align: center;
 }
-.resources-wrapper .resources--links {
+.resources-wrapper .resources--links, .new-players-wrapper .resources--links {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5rem;
 }
-.resources-wrapper .resources--links .links__svg {
+.resources-wrapper .resources--links .links__svg, .new-players-wrapper .resources--links .links__svg {
   width: 25%;
 }
-.resources-wrapper .resources--links .links__svg svg {
+.resources-wrapper .resources--links .links__svg svg, .new-players-wrapper .resources--links .links__svg svg {
   fill: #FFBA49;
 }
-.resources-wrapper .resources--links .links__links {
+.resources-wrapper .resources--links .links__links, .new-players-wrapper .resources--links .links__links {
   list-style-type: none;
 }
-.resources-wrapper .resources--links .links__links h3 {
+.resources-wrapper .resources--links .links__links h3, .new-players-wrapper .resources--links .links__links h3 {
   font-family: "Audiowide";
   font-size: 2rem;
   margin-bottom: 1rem;
   text-align: center;
 }
-.resources-wrapper .resources--links .links__links li {
+.resources-wrapper .resources--links .links__links li, .new-players-wrapper .resources--links .links__links li {
   margin-bottom: 0.5rem;
   font-weight: bold;
 }
-.resources-wrapper .resources--links .links__links li a {
+.resources-wrapper .resources--links .links__links li a, .new-players-wrapper .resources--links .links__links li a {
   font-size: 1.25rem;
   text-decoration: underline;
 }
-.resources-wrapper .resources--links .links__links li a:hover {
+.resources-wrapper .resources--links .links__links li a:hover, .new-players-wrapper .resources--links .links__links li a:hover {
   cursor: pointer;
   color: #FFBA49;
   text-decoration: none;
+}
+.resources-wrapper .videos-wrapper, .new-players-wrapper .videos-wrapper {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+.resources-wrapper .videos-wrapper .video__iframe, .new-players-wrapper .videos-wrapper .video__iframe {
+  width: 100%;
+  min-height: 200px;
+  height: 100%;
 }
 
 .schedule-wrapper {
@@ -320,7 +328,7 @@ p, a {
     gap: 1rem;
     height: 80vh;
     justify-content: center;
-    padding-bottom: 1rem;
+    padding-bottom: 5rem;
   }
   .main-wrapper .intro {
     order: 2;
@@ -352,7 +360,7 @@ p, a {
     min-width: 350px;
   }
   .new-players-wrapper {
-    padding: 3rem;
+    padding: 5rem 3rem;
   }
   .new-players-wrapper .videos-wrapper {
     flex-direction: column;
@@ -380,7 +388,6 @@ p, a {
     justify-content: center;
     margin-top: 0;
     height: 100vh;
-    margin-bottom: 3rem;
     padding: 5rem 3rem;
   }
   .schedule-wrapper .schedule--calendar {
@@ -397,6 +404,9 @@ p, a {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+  }
+  .cta-wrapper .cta--intro {
+    margin-bottom: 2rem;
   }
   .cta-wrapper .cta--svg {
     order: 2;
