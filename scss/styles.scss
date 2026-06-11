@@ -154,7 +154,7 @@ p, a{
     }
     .announcements__img{
         display: block;
-        min-width: 450px;
+        max-width: 750px;
         width: 100%;
         object-fit: cover;
         margin: 0 auto;
